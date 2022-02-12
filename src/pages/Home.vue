@@ -11,10 +11,10 @@
               >（{{ 0 }}）</span
             >
           </a>
-          <div id="J_miniCartMenu" class="cart-menu">
+          <div id="J_miniCartMenu" class="cart-menu" style="height: auto;">
             <div class="menu-content">
-              <div class="loading"><div class="loader"></div></div>
-              <ul id="J_miniCartList" class="cart-list hide">
+              <div class="loading hide"><div class="loader"></div></div>
+              <ul id="J_miniCartList" class="cart-list">
                 <li>
                   <div class="cart-item clearfix first">
                     <a
@@ -38,10 +38,16 @@
                   </div>
                 </li>
               </ul>
-              <div
-                id="J_miniCartListTotal"
-                class="cart-total clearfix hide"
-              ></div>
+              <div id="J_miniCartListTotal" class="cart-total clearfix">
+                <span class="total"
+                  >共 <em>1</em> 件商品<span class="price"
+                    ><em>4399</em>元</span
+                  ></span
+                >
+                <a href="//www.mi.com/buy/cart" class="btn btn-primary btn-cart"
+                  >去购物车结算</a
+                >
+              </div>
               <div class="msg msg-error hide"></div>
               <div class="msg msg-empty hide">
                 购物车中还没有商品，赶紧选购吧！
@@ -5309,6 +5315,12 @@
   animation-direction: alternate-reverse;
 }
 
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 @keyframes loader {
   from {
     transform: scaleY(0.3);
@@ -5444,6 +5456,37 @@
     li:first-child .cart-item {
       border-top: 0;
     }
+  }
+
+  .cart-total {
+    padding: 20px 20px;
+    background: #fafafa;
+    .total {
+      float: left;
+      width: 270px;
+      color: #757575;
+    }
+    .price {
+      display: block;
+      font-weight: 400;
+      color: #ff6700;
+      em {
+          font-size: 36px;
+      }
+    }
+    .btn-cart {
+      float: right;
+      width: 260px;
+      padding: 0;
+      font-size: 28px;
+      line-height: 86px;
+      text-align: center;
+      color: #f5f5f5;
+      background: #ff6700;
+    }
+    em {
+    font-style: normal;
+}
   }
 
   ul {
