@@ -56,7 +56,7 @@
           </div>
         </div>
         <div id="J_siteUserInfo" class="topbar-info">
-          <a class="link">登录</a>
+          <router-link class="link" to="/login">登录</router-link>
           <span class="sep">|</span>
           <a class="link">注册</a>
           <span class="sep">|</span>
