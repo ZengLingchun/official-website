@@ -59,9 +59,13 @@ export default {
   .content {
     float: left;
     .login-panel {
-      position: relative;
-      top: 200px;
-      left: 800px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      transform: translate(20%, 0);
       width: 1000px;
       height: 800px;
       text-align: left;
@@ -70,9 +74,6 @@ export default {
       overflow: hidden;
       border-radius: 4px;
       padding: 2.066667rem 3.2rem;
-      position: relative;
-      margin: 0 auto 80px;
-      min-width: 450px;
       box-shadow: 0 20px 50px 0 hsl(0deg 0% 64% / 10%);
       .el-tabs__nav-wrap::after {
         content: "";

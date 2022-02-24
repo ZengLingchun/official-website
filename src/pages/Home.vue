@@ -4,13 +4,13 @@
     <div class="site-topbar">
       <div class="container">
         <div id="J_miniCartTrigger" class="topbar-cart">
-          <a class="cart-mini">
+          <router-link to="/cart" class="cart-mini">
             <em class="iconfont">&#xe61a;</em>
             <em class="iconfont-cart-full hide"></em>购物车<span
               class="cart-mini-num J_cartNum"
               >（{{ 0 }}）</span
             >
-          </a>
+          </router-link>
           <div id="J_miniCartMenu" class="cart-menu hide" style="height: auto">
             <div class="menu-content">
               <div class="loading"><div class="loader"></div></div>
