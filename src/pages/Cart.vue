@@ -3,13 +3,15 @@
     <div class="container">
       <el-table :data="goods" style="width: 100%">
         <el-table-column type="selection" width="55" />
-        <el-table-column label="商品名称">
+        <el-table-column label="商品名称" width="400">
           <template #default="scope">
-            <img :src="scope.row.name.image" alt="" />
-            <span>{{ scope.row.name.info }}</span>
+            <div class="goods-info">
+              <img width="80" height="80" :src="scope.row.name.image" />
+              <span>{{ scope.row.name.info }}</span>
+            </div>
           </template>
         </el-table-column>
-        <el-table-column label="单价">
+        <el-table-column label="单价" width="200">
           <template #default="scope">
             <span>{{ scope.row.price }}元</span>
           </template>
@@ -19,14 +21,14 @@
             <el-input-number v-model="scope.row.num" />
           </template>
         </el-table-column>
-        <el-table-column label="小计">
+        <el-table-column label="小计" width="200">
           <template #default="scope">
             <span>{{ scope.row.price * scope.row.num }}元</span>
           </template>
         </el-table-column>
         <el-table-column label="操作">
           <template>
-            <el-icon><close  /></el-icon>
+            <el-icon><close /></el-icon>
           </template>
         </el-table-column>
       </el-table>
@@ -35,7 +37,7 @@
 </template>
 
 <script>
-import { ElTable, ElTableColumn, ElInputNumber } from "element-plus";
+import { ElTable, ElTableColumn, ElInputNumber, ElIcon } from "element-plus";
 
 export default {
   data() {
@@ -58,6 +60,7 @@ export default {
     ElTable,
     ElTableColumn,
     ElInputNumber,
+    ElIcon,
   },
 };
 </script>
@@ -80,9 +83,18 @@ export default {
       height: 70px;
       line-height: 70px;
       font-size: 30px;
-			font-weight: none;
-			color: #424242;
-			text-align: center;
+      font-weight: none;
+      color: #424242;
+      text-align: center;
+    }
+    .goods-info {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+			width: 100%;
+    }
+    .cell {
+      text-align: center;
     }
   }
 }
