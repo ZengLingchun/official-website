@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <div class="container" style="height: 100%">
+    <div class="container">
       <el-table :data="goods" style="width: 100%">
         <el-table-column type="selection" width="55" />
         <el-table-column label="商品名称" width="400">
@@ -75,8 +75,8 @@ export default {
 <style lang="less">
 .cart {
   width: 100%;
-  height: 100%;
   background-color: #f5f5f5;
+  padding: 80px 0 120px;
   .el-table {
     thead {
       height: 150px;
