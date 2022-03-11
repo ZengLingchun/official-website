@@ -6,7 +6,7 @@
           <div class="page-info">
             <div class="product-box container">
               <div class="img-left">
-                <el-carousel arrow="always" class="carousel">
+                <el-carousel arrow="always" :autoplay="false" class="carousel">
                   <el-carousel-item v-for="item in swiper" :key="item">
                     <img
                       alt=""
@@ -90,24 +90,15 @@
                     </div>
                   </div>
                 </div>
-                <div data-v-acfb37e4="" class="selected-list">
-                  <ul data-v-acfb37e4="">
-                    <li data-v-acfb37e4="">
-                      Redmi K50 电竞版 12GB+256GB 银翼<span data-v-acfb37e4=""
-                        >3899元</span
-                      >
-                    </li>
+                <div class="selected-list">
+                  <ul>
+                    <li>Redmi K50 电竞版 12GB+256GB 银翼<span>3899元</span></li>
                   </ul>
-                  <ul data-v-acfb37e4=""></ul>
-                  <ul data-v-acfb37e4=""></ul>
-                  <ul data-v-acfb37e4=""></ul>
-                  <ul data-v-acfb37e4=""></ul>
-                  <div data-v-acfb37e4="" class="total-price">总计：3899元</div>
+                  <div class="total-price">总计：3899元</div>
                 </div>
                 <div class="btn-box">
-                  <div data-v-381dda6a="" class="sale-btn">
+                  <div class="sale-btn">
                     <a
-                      data-v-381dda6a=""
                       data-spm="product_15615.add_cart.1"
                       href="javascript:void(0);"
                       class="btn btn-primary"
@@ -115,71 +106,34 @@
                       >加入购物车</a
                     >
                   </div>
-                  <div data-v-5d5a0502="" class="favorite-btn">
-                    <a
-                      data-v-5d5a0502=""
-                      data-spm="product_15615.favor.1"
-                      class="btn-gray btn-like"
-                      data-params='""'
-                      ><i data-v-5d5a0502="" class="iconfont default"></i
-                      ><i data-v-5d5a0502="" class="iconfont red"
-                        ><i data-v-5d5a0502="" class="iconfont redsd"></i></i
-                      >喜欢</a
-                    >
-                  </div>
                 </div>
-                <div data-v-6d9966ee="" class="after-sale-info">
-                  <span data-v-6d9966ee=""
-                    ><a
-                      data-v-6d9966ee=""
-                      href="javascript:void(0);"
-                      class="support"
-                      ><i data-v-6d9966ee="" class="iconfont"></i
-                      ><em data-v-6d9966ee="">小米自营</em></a
+                <div class="after-sale-info">
+                  <span
+                    ><a href="javascript:void(0);" class="support"
+                      ><i class="iconfont">&#xe8e3;</i><em>小米自营</em></a
                     ></span
-                  ><span data-v-6d9966ee=""
+                  ><span
                     ><a
-                      data-v-6d9966ee=""
-                      href="javascript:void(0);"
-                      title="由小米发货"
-                      class="support"
-                      ><i data-v-6d9966ee="" class="iconfont"></i
-                      ><em data-v-6d9966ee="">小米发货</em></a
+                      ><i class="iconfont">&#xe8e3;</i><em>小米发货</em></a
                     ></span
-                  ><span data-v-6d9966ee=""
+                  ><span
+                    ><a href="javascript:void(0);" class="support"
+                      ><i class="iconfont">&#xe8e3;</i><em>7天无理由退货</em></a
+                    ></span
+                  ><span
+                    ><a class="support"
+                      ><i class="iconfont">&#xe8e3;</i><em>运费说明</em></a
+                    ></span
+                  ><span
+                    ><a class="support"
+                      ><i class="iconfont">&#xe8e3;</i><em>企业信息</em></a
+                    ></span
+                  ><span
                     ><a
-                      data-v-6d9966ee=""
-                      href="javascript:void(0);"
-                      class="support"
-                      ><i data-v-6d9966ee="" class="iconfont"></i
-                      ><em data-v-6d9966ee="">7天无理由退货</em></a
-                    ></span
-                  ><span data-v-6d9966ee=""
-                    ><a
-                      data-v-6d9966ee=""
-                      href="javascript:void(0);"
-                      title="由小米发货商品(不含有品),单笔满69元免运费;
-由小米有品发货的商品,免运费;
-由第三方商家发货的商品，运费以实际结算金额为准;
-特殊商品需要单独收取运费,具体以实际结算金额为准;优惠券等不能抵扣运费金额;如需无理由退货,用户将承担该商品的退货物流费用;
-使用门店闪送服务，需单独支付10元运费。"
-                      class="support"
-                      ><i data-v-6d9966ee="" class="iconfont"></i
-                      ><em data-v-6d9966ee="">运费说明</em></a
-                    ></span
-                  ><span data-v-6d9966ee=""
-                    ><a data-v-6d9966ee="" class="support"
-                      ><i data-v-6d9966ee="" class="iconfont"></i
-                      ><em data-v-6d9966ee="">企业信息</em></a
-                    ></span
-                  ><span data-v-6d9966ee=""
-                    ><a
-                      data-v-6d9966ee=""
                       href="https://s1.mi.com/m/faq/giving/index.html?project_id=44"
                       target="_blank"
                       class="support"
-                      ><i data-v-6d9966ee="" class="iconfont"></i
-                      ><em data-v-6d9966ee="">7天价格保护</em></a
+                      ><i class="iconfont">&#xe8e3;</i><em>7天价格保护</em></a
                     ></span
                   >
                 </div>
@@ -198,7 +152,7 @@ export default {
     return {
       swiper: [
         "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644924818.17546007.png",
-        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644895162.50177486.png",
+        "https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1644895162.50177486.png"
       ],
     };
   },
@@ -225,7 +179,7 @@ export default {
       flex: 1;
       margin-left: 20px;
       h2 {
-        margin: 10px 0;
+        margin: 10px 0 20px;
         padding: 0;
         font-size: 48px;
         font-weight: 400;
@@ -237,14 +191,16 @@ export default {
         padding: 0;
         padding-top: 8px;
         line-height: 1.5;
+        font-size: 32px;
       }
       .company-info {
         color: #ff6700;
-        margin-bottom: 0;
+        margin: 20px 0;
+        font-size: 28px;
       }
       .price-info {
         display: block;
-        font-size: 18px;
+        font-size: 40px;
         line-height: 1;
         color: #ff6700;
         padding: 12px 0 10px;
@@ -256,15 +212,15 @@ export default {
         margin: 20px 0;
       }
       .product-address {
-        padding: 30px 50px;
+        padding: 70px 120px;
         position: relative;
         background: #fafafa;
         border: 1px solid #e0e0e0;
         .iconfont {
           position: absolute;
-          left: 20px;
-          top: 26px;
-          font-size: 20px;
+          left: 40px;
+          top: 74px;
+          font-size: 36px;
           color: #999;
         }
         .address-info,
@@ -300,8 +256,8 @@ export default {
         li {
           margin-right: 12px;
           margin-top: 10px;
-          line-height: 42px;
-          height: 42px;
+          line-height: 110px;
+          height: 110px;
           position: relative;
           border: 1px solid #e0e0e0;
           list-style: none;
@@ -309,23 +265,33 @@ export default {
           -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
           float: left;
-          width: 292px;
-          font-size: 16px;
+          width: 18.391rem;
+          font-size: 32px;
           text-align: center;
+        }
+        li:nth-child(2n) {
+          margin-right: 0;
         }
         li.active,
         li:hover {
           z-index: 3;
           border-color: #ff6700;
+          color: #ff6700;
         }
       }
       .selected-list {
         background: #f9f9fa;
-        padding: 30px;
-        margin-bottom: 30px;
+        padding: 60px;
+        margin-bottom: 50px;
         ul {
           padding: 0;
           margin: 0;
+          li {
+            list-style: none;
+            line-height: 30px;
+            color: #616161;
+            font-size: 26px;
+          }
           li:first-child {
             margin-top: 0;
             list-style: none;
@@ -339,8 +305,8 @@ export default {
         }
         .total-price {
           color: #ff6700;
-          font-size: 24px;
-          padding-top: 20px;
+          font-size: 50px;
+          padding-top: 80px;
         }
       }
       .btn-box {
@@ -364,10 +330,11 @@ export default {
             transition: all 0.4s;
           }
           .btn {
-            width: 298px;
-            height: 52px;
-            line-height: 52px;
-            font-size: 16px;
+            width: 700px;
+            height: 120px;
+            line-height: 120px;
+            font-size: 38px;
+            font-weight: 400;
           }
           .btn-primary {
             background: #ff6700;
@@ -377,10 +344,10 @@ export default {
         }
       }
       .after-sale-info {
-        span[data-v-6d9966ee] {
+        span {
           display: inline-block;
         }
-        a[data-v-6d9966ee] {
+        a {
           display: inline-block;
           margin-right: 15px;
           line-height: 30px;
@@ -388,25 +355,57 @@ export default {
           cursor: default;
           white-space: nowrap;
           color: #b0b0b0;
-          i[data-v-6d9966ee] {
-            font-size: 20px;
+          i {
+            font-size: 36px;
             display: inline-block;
             font-style: normal;
             vertical-align: middle;
           }
-          em[data-v-6d9966ee] {
+          em {
             font-style: normal;
             display: inline-block;
-            margin-left: 2px;
+            margin-left: 10px;
             vertical-align: middle;
+            font-size: 30px;
           }
         }
       }
     }
   }
   .carousel {
-    width: 1000px;
-    height: 400px;
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    .el-carousel__button {
+      width: 80px;
+      height: 5px;
+      background-color: #b2d4b6;
+    }
+  }
+  .el-carousel__container {
+    position: relative;
+    height: 1200px;
+    .el-carousel__arrow {
+      background-color: rgba(0, 0, 0, 0);
+      height: 140px;
+      width: 80px;
+    }
+    .el-icon {
+      height: 140px;
+      width: 80px;
+      line-height: 140px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      fill: currentColor;
+      color: #cdbcbc;
+      font-size: 60px;
+    }
+    img {
+      width: 1200px;
+      height: 1200px;
+    }
   }
 }
 </style>

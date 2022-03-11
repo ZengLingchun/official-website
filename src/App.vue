@@ -78,11 +78,11 @@
       <div class="site-header">
         <div class="container">
           <div class="header-logo">
-            <a href="//www.mi.com/index.html" title="小米官网" class="logo ir"
+            <a href="/" title="小米官网" class="logo ir"
               >小米官网</a
             >
           </div>
-          <div class="header-nav" style="display: none">
+          <div class="header-nav">
             <ul class="nav-list J_navMainList clearfix">
               <li id="J_navCategory" class="nav-category">
                 <a href="//www.mi.com/category/list" class="link-category"
@@ -90,7 +90,6 @@
                 >
                 <div class="site-category" style="display: block">
                   <ul
-                    id="J_categoryList"
                     class="
                       site-category-list
                       clearfix
@@ -103,34 +102,18 @@
                       class="category-item"
                     >
                       <a
-                        data-spm="cms_10530.3476792.1"
-                        data-scm="server.0.0.0.cms.0.0.0"
                         href="javascript:void(0);"
-                        data-log_code="31pchomeother001000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476792.1"
                         class="title"
-                        data-settrack="true"
-                        onclick="_msq.push(['trackEvent','31pchomeother001000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476792.1','javascript:void(0);','&quot;&quot;']);"
-                        data-params='""'
                       >
                         手机
                         <em class="iconfont">&#xe617;</em></a
                       >
                       <div class="children clearfix children-col-4">
-                        <ul
-                          class="
-                            children-list children-list-col children-list-col-1
-                          "
-                        >
+                        <ul class="children-list children-list-col children-list-col-1">
                           <li>
                             <a
                               href="https://www.mi.com/mi12pro"
-                              data-log_code="31pchomeother001000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476792.2"
-                              data-spm="cms_10530.3476792.2"
-                              data-scm="server.0.0.0.cms.0.0.0"
                               class="link clearfix"
-                              data-settrack="true"
-                              onclick="_msq.push(['trackEvent','31pchomeother001000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476792.2','https://www.mi.com/mi12pro','&quot;&quot;']);"
-                              data-params='{"uri":"https:%252F%252Fwww.mi.com%252Fmi12pro"}'
                               ><img
                                 src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/6c0553468a73cc445012577d8993dfc9.png?thumb=1&amp;w=80&amp;h=80&amp;f=webp&amp;q=90"
                                 width="40"
@@ -147,9 +130,6 @@
                               data-spm="cms_10530.3476792.3"
                               data-scm="server.0.0.0.cms.0.0.0"
                               class="link clearfix"
-                              data-settrack="true"
-                              onclick="_msq.push(['trackEvent','31pchomeother001000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476792.3','https://www.mi.com/mi12','&quot;&quot;']);"
-                              data-params='{"uri":"https:%252F%252Fwww.mi.com%252Fmi12"}'
                               ><img
                                 src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/ae8f6a46838f737d69290f12fd95de35.png?thumb=1&amp;w=80&amp;h=80&amp;f=webp&amp;q=90"
                                 width="40"
@@ -5156,7 +5136,7 @@
         <div class="container">
           <div class="footer-service">
             <ul class="list-service clearfix">
-              <li>
+              <li style="border: none;">
                 <a
                   rel="nofollow"
                   href="//www.mi.com/service/quick-repair"
@@ -5194,7 +5174,7 @@
                   rel="nofollow"
                   href="//www.mi.com/service/sitelist"
                   target="_blank"
-                  ><em class="iconfont">&#xe61c;</em>520余家售后网点</a
+                  ><em class="iconfont">&#xe61c;</em>1000余家售后网点</a
                 >
               </li>
             </ul>
@@ -5406,8 +5386,12 @@ export default {
   width: 100%;
   height: 100%;
 }
-.line[data-v-70283663] {
+.line {
     margin-top: 12px;
     border-bottom: 1px solid #e0e0e0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 </style>
